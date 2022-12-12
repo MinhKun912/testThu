@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+<form action="../action/traiTim.html" method="get">
+    <div class="container">
+        <h1>Có yêu Minh Không ?</h1>
+        <button>Có   <i class="bi bi-heart-fill"></i></button>
+        <button style=" position: absolute" id="nutNo" onmouseover="noHover()">Không <img src="https://i.pinimg.com/236x/2c/13/08/2c130877570e4d477694d1236b0b94e5.jpg" alt=""></button>
+    </div>
+</form>
+    <script>
+        function noHover() {
+            let x = Math.round(Math.random() * window.innerWidth);
+            let y = Math.round(Math.random() * window.innerHeight);
+            document.getElementById("nutNo").style.left = x + 'px';
+            document.getElementById("nutNo").style.top = y + 'px';
+
+
+        }
+    </script>
+</body>
+</html>
